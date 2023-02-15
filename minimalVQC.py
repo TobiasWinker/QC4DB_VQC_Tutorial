@@ -38,7 +38,7 @@ for i in range(num_qubits):
 qc.compose(TwoLocal(num_qubits, ['ry','rz'], 'cx', 'linear',3), inplace=True)
 
 # Draw the circuit 
-qc.decompose().draw(output='mpl', filename='test2.png')
+qc.decompose().draw(output='mpl', filename='VQC.png')
 
 # Extract the parameters to optimize
 params = list(qc.parameters)[num_qubits:]
@@ -74,7 +74,7 @@ optimizer = Adam(model.parameters(), lr=0.005)
 rewards = deque(maxlen=40)
 
 # Train the model
-for episode in range(200):
+for episode in range(3000):
 
     # Choose a random data entry
     entry = random.choice(data)
