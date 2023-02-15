@@ -31,13 +31,15 @@ We use quantum machine learning to select the best join order for a SQL query. F
 
 ### Data files
 
--  benchmark.csv: Contains the measured quality of all join orders. A value of -1 indicates that this join order would lead to a cross join and these are not measured. Format:
+-  benchmark.csv: Contains the measured quality of all join orders. A value of -1 indicates that this join order would lead to a cross join and these are not measured. 
+Format:
         
         Col 1: List of tables names seperated by ;
         Col 2-16:   Execution times of the join orders
         Col 17-31:  Number of intermediate results created by the join orders
 
--  data.csv: Benchmark data prepared for quantum machine learning. Can be created from benchmark.csv by using prepareData.py Format:
+-  data.csv: Benchmark data prepared for quantum machine learning. Can be created from benchmark.csv by using prepareData.py. 
+Format:
         
         Col 1-4: Features representing the features. Created by turning each tablename into an id and mapping them to the interval [0,pi]. Used as angle of the encoding rotation gates
         Col 5-20:   Rewards for the corresponding join orders calculated from the execution times padded to 2^n
