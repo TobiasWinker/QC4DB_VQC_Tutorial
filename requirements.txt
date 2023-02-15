@@ -1,0 +1,6 @@
+numpy
+torch
+qiskit 
+qiskit[machine-learning]
+matplotlib
+pylatexenc
