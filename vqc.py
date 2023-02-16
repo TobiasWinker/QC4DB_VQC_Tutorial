@@ -100,6 +100,21 @@ for episode in range(30):
     optimizer.zero_grad()
     loss.backward()
     optimizer.step()
+ 
+# Evaluate model for all queries and save it
+rewardSum = 0
+for entry in data:
+    # Predict rewards from the features
+    prediction = model(Tensor(entry[0:4]))
+    # Choose join order with highest predicted reward
+    selected = prediction.argmax()
+    # Store the real reward this selection would give
+    rewardSum += entry[4+selected]
+
+print("Average reward over all queries: {:.3f}".format(rewardSum/len(data)))
+
+# Save model parameters 
+torch.save(model.state_dict(), "vqc.model")
 
 
 
