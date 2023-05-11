@@ -1,6 +1,6 @@
-numpy
-torch
-qiskit 
-qiskit[machine-learning]
-matplotlib
-pylatexenc
+qiskit==0.40.0
+qiskit-machine-learning==0.4.0
+torch==1.10.2
+matplotlib==3.5.1
+pylatexenc==2.10
+notebook

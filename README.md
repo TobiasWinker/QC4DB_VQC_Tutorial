@@ -2,19 +2,25 @@
 
 A simple example of using a variational quantum circuit (VQC) for quantum machine learning for join order optimization.
 
-## Usage
+## Setup
 
-1. Install requirements  
-
-```
-pip install -r requirements.txt 
-```
-
-2. Run the code
+### Docker
 
 ```
-python vqc.py
+docker build -t sigmod_tutorial_qc4db .
+docker run --name qc4db_tutorial -v $PWD:/home/tutorial/tutorial -p 8888:8888 -d sigmod_tutorial_qc4db
 ```
+
+### Local
+
+```
+pip install -r requirements.txt
+./run.sh
+```
+
+### Start Tutorial
+Navigate to http://localhost:8888/notebooks/qc4jo.ipynb in a Browser.
+
 
 ## Quantum machine learning
 
