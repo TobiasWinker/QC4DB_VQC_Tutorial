@@ -2,6 +2,42 @@
 
 A simple example of using a variational quantum circuit (VQC) for quantum machine learning for join order optimization.
 
+This tutorial was presented at the SIGMOD conference 2023.
+
+## Material
+* [Accompanying slides](SIGMOD_tutorial_slides.pdf)
+* [Tutorial website](https://www.helsinki.fi/en/researchgroups/unified-database-management-systems-udbms/sigmod-2023-tutorial)
+
+## Cite
+
+Tobias Winker, Sven Groppe, Valter Uotila, Zhengtong Yan, Jiaheng Lu, Maja
+Franz, and Wolfgang Mauerer. 2023. **Quantum Machine Learning: Foundation, New
+Techniques, and Opportunities for Database Research**. *In Companion of the 2023
+International Conference on Management of Data (SIGMOD/PODS '23)*. Association
+for Computing Machinery, New York, NY, USA, 45–52. https://doi.org/10.1145/3555041.3589404
+
+BibTeX entry:
+
+```
+@inproceedings{winker:23:sigmodtutorial,
+  author = {Winker, Tobias and Groppe, Sven and Uotila, Valter and Yan, Zhengtong and Lu, Jiaheng and Franz, Maja and Mauerer, Wolfgang},
+  title = {Quantum Machine Learning: Foundation, New Techniques, and Opportunities for Database Research},
+  year = {2023},
+  isbn = {9781450395076},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3555041.3589404},
+  doi = {10.1145/3555041.3589404},
+  booktitle = {Companion of the 2023 International Conference on Management of Data},
+  pages = {45–52},
+  numpages = {8},
+  keywords = {quantum computing, databases, quantum machine learning},
+  location = {Seattle, WA, USA},
+  series = {SIGMOD/PODS '23}
+}
+
+```
+
 ## Setup
 
 ### Docker
